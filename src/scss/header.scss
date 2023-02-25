@@ -1,0 +1,111 @@
+.header {
+  &__help-menu {
+    background: #e5e5e5;
+    display: flex;
+    height: 50px;
+  }
+  &__nav-help {
+    margin: auto;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(5px + (36 - 5) * ((100vw - 320px) / (1243 - 320)));
+      li {
+        cursor: pointer;
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #333333;
+        @media (max-width: ($md3+px)) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &__content {
+    border: 1px solid #efefef;
+    background: #ffffff;
+  }
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    justify-content: space-between;
+    @media (max-width: ($md3+px)) {
+      justify-content: center;
+    }
+  }
+  &__menu_logo {
+    display: flex;
+    margin: auto 0;
+    img {
+      margin-right: 20px;
+    }
+    h1 {
+      margin: auto;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.1em;
+      color: #66c05d;
+    }
+  }
+  &__menu_tel {
+    margin: auto 0;
+    display: flex;
+    a {
+      margin: auto;
+      margin-right: 40px;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      cursor: pointer;
+      @media (max-width: ($md3+px)) {
+        font-size: 12px;
+      }
+    }
+    button {
+      width: 170px;
+      height: 40px;
+      background: #ffffff;
+      border: 2px solid #66c05d;
+      border-radius: 40px;
+      @media (max-width: ($md3+px)) {
+        width: 130px;
+        height: 35px;
+      }
+    }
+    button:hover {
+      background: #ffffffc2;
+      border: 2px solid #65c05d8f;
+    }
+  }
+  &__main-menu {
+    height: 80px;
+    display: flex;
+  }
+  &__nav-main {
+    margin: auto;
+    ul {
+      display: flex;
+      gap: calc(5px + (40 - 5) * ((100vw - 320px) / (1243 - 320)));
+      flex-wrap: wrap;
+      li {
+        cursor: pointer;
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        @media (max-width: ($md3+px)) {
+          font-size: 14px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
