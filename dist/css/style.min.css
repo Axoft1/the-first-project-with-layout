@@ -204,6 +204,11 @@ body {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
+.webp .main__content {
+  background: url(../img/Rectangle.webp);
+  background-position: center 100%;
+  height: 604px;
+}
 .main__content {
   background: url(../img/Rectangle.png);
   background-position: center 100%;
